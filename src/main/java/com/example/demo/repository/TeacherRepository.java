@@ -11,4 +11,6 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
  * date 2019/1/7
  */
 public interface TeacherRepository extends JpaRepository<Teacher,String>, JpaSpecificationExecutor<Teacher> {
+
+    long countByTeacherName(String a);
 }

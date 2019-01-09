@@ -31,6 +31,33 @@ public class Student implements Serializable {
     @Transient
     private List<String> books = new ArrayList<>(0);
 
+    public Student() {
+    }
+
+    public Student(String id, String studentName, Integer studentAge) {
+        this.id = id;
+        this.studentName = studentName;
+        this.studentAge = studentAge;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Student student = (Student) o;
+
+        if (!studentName.equals(student.studentName)) return false;
+        return studentAge.equals(student.studentAge);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = studentName.hashCode();
+        result = 31 * result + studentAge.hashCode();
+        return result;
+    }
+
     public String getId() {
         return id;
     }
