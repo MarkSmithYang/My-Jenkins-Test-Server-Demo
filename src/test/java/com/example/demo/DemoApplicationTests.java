@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
 import javax.persistence.criteria.*;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -30,11 +31,11 @@ public class DemoApplicationTests {
 
     @Test
     public void contextLoads() {
-        List<Student> list =new ArrayList<>();
-        list.add(new Student("1","jack",19));
-        list.add(new Student("2","jack",20));
-        list.add(new Student("3","jack",21));
-        list.add(new Student("4","jack",19));
+        List<Student> list = new ArrayList<>();
+        list.add(new Student("1", "jack", 19));
+        list.add(new Student("2", "jack", 20));
+        list.add(new Student("3", "jack", 21));
+        list.add(new Student("4", "jack", 19));
         //需要Student重写hashCode和equals
         List<Student> collect = list.stream().distinct().collect(Collectors.toList());
         Set<Student> set = new HashSet<>(list);
@@ -44,6 +45,12 @@ public class DemoApplicationTests {
         //验证JPA的countByxxx查询的数据为空时,返回的是0
         long a = teacherRepository.countByTeacherName("a");
         System.err.println(a);
+
+    }
+
+    @Test
+    public void contextLoads2() {
+
 
     }
 
