@@ -22,4 +22,9 @@ public class MyController {
     public String hello(){
         return "hi,helloWorld";
     }
+
+    @GetMapping("world")
+    public String world(){
+        return "hi,world,I'm Iron Man";
+    }
 }
