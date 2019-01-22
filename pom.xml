@@ -11,7 +11,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>demo</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>demo</name>
     <description>Demo project for Spring Boot</description>
 
@@ -66,7 +66,7 @@
 
     <build>
         <!--指定打包包名-->
-        <finalName>my-Jpa-Join</finalName>
+        <finalName>my-Jpa-Join-1.0.0</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
