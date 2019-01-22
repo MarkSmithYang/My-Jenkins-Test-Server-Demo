@@ -8,8 +8,8 @@ ENV port=8888
 ENV bind=0.0.0.0
 MAINTAINER yangbiao
 ADD ${file} .
+WORKDIR /root/.jenkins/workspace/my-test-demo/target/
 
-#WORKDIR /opt
 #ENV host=localhost
 #ENV eureka=localhost:8899
 #CMD java -jar ./${file} --spring.profiles.active=${runEnv} --eureka.instance.hostname=${host} --server.port=${port} --server.address=${bind} --eureka.client.serviceUrl.defaultZone=http://${eureka}/eureka/
