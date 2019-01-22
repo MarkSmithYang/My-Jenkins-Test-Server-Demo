@@ -10,9 +10,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>demo</artifactId>
-    <version>1.0.0</version>
-    <name>demo</name>
+    <artifactId>my-Jpa-Join</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <name>my-Jpa-Join</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -66,7 +67,7 @@
 
     <build>
         <!--指定打包包名-->
-        <finalName>my-Jpa-Join-1.0.0</finalName>
+        <finalName>my-Jpa-Join</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
