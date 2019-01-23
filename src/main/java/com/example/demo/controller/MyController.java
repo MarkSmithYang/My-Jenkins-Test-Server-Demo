@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author biaoyang
- * @Description:
+ * @Description:用于测试jenkins是否部署了启动了工程的接口访问类
  * @date 2019/1/17 001711:14
  */
 @RestController

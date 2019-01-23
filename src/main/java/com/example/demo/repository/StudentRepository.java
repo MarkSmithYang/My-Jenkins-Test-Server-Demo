@@ -9,6 +9,6 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
  * author yangbiao
  * date 2019/1/3
  */
-public interface StudentRepository extends JpaRepository<Student,String>, JpaSpecificationExecutor<Student> {
+public interface StudentRepository extends JpaRepository<Student,String>{
 
 }

@@ -9,7 +9,6 @@
 #MAINTAINER yangbiao
 #ADD ${file} /root/.jenkins/workspace/my-test-demo/target
 
-#WORKDIR /xxx
 #ENV host=localhost
 #ENV eureka=localhost:8899
 #CMD java -jar ./${file} --spring.profiles.active=${runEnv} --eureka.instance.hostname=${host} --server.port=${port} --server.address=${bind} --eureka.client.serviceUrl.defaultZone=http://${eureka}/eureka/
@@ -17,7 +16,10 @@
 
 
 FROM ubuntu:latest
-ADD my-Jpa-Join.jar app.jar
+#相当于 cd
+WORKDIR /opt
+COPY /root/.jenkins/workspace/my-test-demo/src/main/docker/ /opt
+ADD my-Jpa-Join.jar app.jar /opt
 EXPOSE 8888
 MAINTAINER yangbiao
 ENTRYPOINT ["java","-jar","/app.jar"]
