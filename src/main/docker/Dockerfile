@@ -15,12 +15,8 @@
 #CMD java -jar /root/.jenkins/workspace/my-test-demo/target/${file} --spring.profiles.active=${runEnv} --server.port=${port} --server.address=${bind}
 
 
-FROM my_ubuntu1:latest
-#相当于 cd
-COPY /root/.jenkins/workspace/my-test-demo/src/main/docker/ /opt/
-ADD my-Jpa-Join.jar .
-WORKDIR /opt
-#docker build -t yangbiao/demo /这个就是Dockerfile所在目录
+FROM java_ubuntu:latest
+ADD my-Jpa-Join.jar app.jar
 EXPOSE 8888
 MAINTAINER yangbiao
 ENTRYPOINT ["java","-jar","/app.jar"]
