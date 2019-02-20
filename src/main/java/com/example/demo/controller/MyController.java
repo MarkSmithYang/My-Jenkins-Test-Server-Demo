@@ -14,17 +14,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class MyController {
 
     @GetMapping("get")
-    public String getMyName(){
+    public String getMyName() {
         return "jack-====-rose";
     }
 
     @GetMapping("hello")
-    public String hello(){
+    public String hello() {
         return "hi,helloWorld";
     }
 
     @GetMapping("world")
-    public String world(){
+    public String world() {
         return "hi,world,I'm Iron Man";
     }
 }

@@ -25,9 +25,9 @@
            直接复制过来即可当然了,如果你想去maven仓库去寻找也是可以的,但是特别麻烦)-->
         <!--因为有些地方的本地仓库不一定有该依赖的jar包,所以注释它-->
         <!--<dependency>-->
-            <!--<groupId>com.yb</groupId>-->
-            <!--<artifactId>jwt-spring-boot-starter</artifactId>-->
-            <!--<version>1.0-REALEASE</version>-->
+        <!--<groupId>com.yb</groupId>-->
+        <!--<artifactId>jwt-spring-boot-starter</artifactId>-->
+        <!--<version>1.0-REALEASE</version>-->
         <!--</dependency>-->
         <!--自定义的springboot的starter组件(里面就仅仅有一个JwtService服务,生成和解析Jwt)-->
         <dependency>

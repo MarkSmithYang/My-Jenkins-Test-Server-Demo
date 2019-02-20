@@ -8,6 +8,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * author yangbiao
  * date 2019/1/7
  */
-public interface PeopleRepository extends JpaRepository<People,String> {
+public interface PeopleRepository extends JpaRepository<People, String> {
 
 }
